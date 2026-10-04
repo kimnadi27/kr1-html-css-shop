@@ -25,7 +25,7 @@ HTML5 (семантика), CSS3 (Flex, Grid, переменные), JavaScript 
 
 ## Ссылка на опубликованный проект
 
-GitHub Pages: https://username.github.io/kr1-html-css-shop/
+GitHub Pages: https://kimnadi27.github.io/kr1-html-css-shop/
 
 ## История выполнения
 
