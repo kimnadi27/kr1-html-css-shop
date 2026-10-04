@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Свежие фрукты с доставкой — Фрукты&amp;Ко</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html">Фрукты&amp;Ко</a>
+      <nav class="nav" aria-label="Основная навигация">
+        <ul class="nav__list">
+        <li><a class="nav__link" href="index.html" aria-current="page">Главная</a></li>
+        <li><a class="nav__link" href="catalog.html">Каталог</a></li>
+        <li><a class="nav__link" href="order.html">Заявка</a></li>
+        <li><a class="nav__link" href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1 class="hero__title">Свежие фрукты — от сада до вашей двери</h1>
+      <p class="hero__text">Берём у фермеров по сезону, привозим за сутки и не храним на складе дольше двух дней.</p>
+      <a class="btn" href="#popular">Выбрать фрукты</a>
+    </section>
+
+    <section class="section" id="advantages">
+      <h2>Почему нас выбирают</h2>
+      <ul class="advantages">
+        <li class="advantages__item"><strong>Свежесть</strong> Привозим в течение суток после сбора.</li>
+        <li class="advantages__item"><strong>Прямые поставки</strong> Работаем с фермерами без перекупщиков.</li>
+        <li class="advantages__item"><strong>Доставка в день заказа</strong> Если оформить заявку до 14:00.</li>
+        <li class="advantages__item"><strong>Возврат денег</strong> Если фрукты не понравились — вернём оплату.</li>
+      </ul>
+    </section>
+
+    <section class="section" id="popular">
+      <h2>Популярные фрукты</h2>
+      <div class="grid">
+        <article class="card">
+          <div class="card__img" aria-hidden="true">🍎</div>
+          <h3 class="card__title">Яблоки Гала</h3>
+          <p class="card__text">Сладкие хрустящие яблоки из садов Краснодарского края.</p>
+          <p class="card__price">189 ₽ / кг</p>
+          <div class="card__actions">
+            <a class="btn btn--ghost" href="product-apple.html">Подробнее</a>
+            <button class="btn product-card__button" type="button" data-product="Яблоки Гала">Заказать</button>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__img" aria-hidden="true">🍌</div>
+          <h3 class="card__title">Бананы</h3>
+          <p class="card__text">Спелые бананы из Эквадора — готовы к употреблению.</p>
+          <p class="card__price">99 ₽ / кг</p>
+          <div class="card__actions">
+            <a class="btn btn--ghost" href="product-banana.html">Подробнее</a>
+            <button class="btn product-card__button" type="button" data-product="Бананы">Заказать</button>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__img" aria-hidden="true">🍊</div>
+          <h3 class="card__title">Апельсины</h3>
+          <p class="card__text">Сочные апельсины без горечи, отлично для свежевыжатого сока.</p>
+          <p class="card__price">149 ₽ / кг</p>
+          <div class="card__actions">
+            <a class="btn btn--ghost" href="product-orange.html">Подробнее</a>
+            <button class="btn product-card__button" type="button" data-product="Апельсины">Заказать</button>
+          </div>
+        </article>
+      </div>
+      <p><a href="catalog.html">Весь каталог</a></p>
+    </section>
+
+    <aside class="aside-info">
+      <h2>Условия доставки</h2>
+      <p>Бесплатно от 1500 ₽ по городу. Минимальный заказ — 500 ₽. Оплата при получении картой или наличными.</p>
+    </aside>
+  </main>
+
+  <dialog class="order-dialog" id="order-dialog" aria-labelledby="order-dialog-title">
+    <h2 id="order-dialog-title">Оформление заявки</h2>
+    <form class="order-form" id="order-form" action="#" method="post" novalidate>
+      <input id="selected-product" name="selected-product" type="hidden">
+      <div class="form-field">
+        <label for="order-name">Имя</label>
+        <input id="order-name" name="name" type="text" placeholder="Введите ваше имя" minlength="2" autocomplete="given-name" required>
+      </div>
+      <div class="form-field">
+        <label for="order-email">E-mail</label>
+        <input id="order-email" name="email" type="email" placeholder="example@mail.ru" autocomplete="email" required>
+      </div>
+      <div class="form-field">
+        <label for="order-phone">Телефон</label>
+        <input id="order-phone" name="phone" type="tel" inputmode="tel" placeholder="+7 (900) 000-00-00" pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$" required>
+        <small>Формат: +7 (900) 000-00-00</small>
+      </div>
+      <div class="form-field">
+        <label for="order-date">Дата доставки</label>
+        <input id="order-date" name="date" type="date">
+      </div>
+      <div class="form-field">
+        <label for="order-topic">Тема заявки</label>
+        <select id="order-topic" name="topic" required>
+          <option value="">Выберите тему</option>
+          <option value="product">Заказ фруктов</option>
+          <option value="consultation">Консультация</option>
+          <option value="delivery">Доставка</option>
+        </select>
+      </div>
+      <div class="form-field">
+        <label for="order-comment">Комментарий</label>
+        <textarea id="order-comment" name="comment" rows="3" placeholder="Вес, степень зрелости, удобное время"></textarea>
+      </div>
+      <div class="form-field form-field--checkbox">
+        <label><input id="order-agreement" name="agreement" type="checkbox" required> Я согласен на обработку данных</label>
+      </div>
+      <div class="form-actions">
+        <button class="btn btn--ghost" type="button" id="close-order-dialog">Закрыть</button>
+        <button class="btn" type="submit">Отправить заявку</button>
+      </div>
+    </form>
+  </dialog>
+
+  <p class="success-message" id="success-message" hidden>Форма успешно отправлена!</p>
+
+  <footer class="footer" id="contacts">
+    <div class="container footer__inner">
+      <p>&copy; 2026 Фрукты&amp;Ко. Учебный проект.</p>
+      <p>Дисциплина: Фронтенд и бэкенд разработка</p>
+    </div>
+  </footer>
+</body>
+</html>
