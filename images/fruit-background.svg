@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="480" viewBox="0 0 480 480">
+  <rect width="480" height="480" fill="#fbfcf7"/>
+  <defs>
+    <g id="orange">
+      <circle r="32" fill="#f9dca5"/>
+      <circle r="24" fill="none" stroke="#fff4dc" stroke-width="2"/>
+      <path d="M0-24V24M-24 0H24M-17-17 17 17M-17 17 17-17" stroke="#fff4dc" stroke-width="2"/>
+      <path d="M0-32C2-49 22-49 25-44 21-33 9-30 0-32Z" fill="#c9ddba"/>
+    </g>
+    <g id="apple">
+      <path d="M0-22C-18-34-37-20-34 1-31 25-14 34 0 27 14 34 31 25 34 1 37-20 18-34 0-22Z" fill="#efd0c6"/>
+      <path d="M0-22 4-38" stroke="#b8b594" stroke-width="4" stroke-linecap="round"/>
+      <path d="M4-29C10-45 29-41 30-37 25-26 13-24 4-29Z" fill="#c9ddba"/>
+      <path d="M-20-12C-27-4-25 9-20 14" fill="none" stroke="#fff4ed" stroke-width="4" stroke-linecap="round"/>
+    </g>
+    <g id="leaf">
+      <path d="M-25 15C-27-10-4-29 25-15 24 10 1 29-25 15Z" fill="#dce8ce"/>
+      <path d="M-22 14 21-13" stroke="#bfd4ae" stroke-width="2"/>
+    </g>
+  </defs>
+  <use href="#orange" transform="translate(80 78) rotate(-15)"/>
+  <use href="#apple" transform="translate(325 96) rotate(18)"/>
+  <use href="#leaf" transform="translate(203 45) rotate(25)"/>
+  <use href="#leaf" transform="translate(429 201) rotate(-30)"/>
+  <use href="#apple" transform="translate(124 306) rotate(-12)"/>
+  <use href="#orange" transform="translate(354 348) rotate(25)"/>
+  <use href="#leaf" transform="translate(248 235) rotate(70)"/>
+  <use href="#leaf" transform="translate(55 431) rotate(-15)"/>
+  <use href="#leaf" transform="translate(245 422) rotate(30)"/>
+  <g fill="#e4e9d7">
+    <circle cx="48" cy="200" r="4"/>
+    <circle cx="194" cy="155" r="5"/>
+    <circle cx="367" cy="243" r="4"/>
+    <circle cx="221" cy="338" r="4"/>
+    <circle cx="419" cy="438" r="5"/>
+  </g>
+</svg>

@@ -3,11 +3,29 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100dvh;
   margin: 0;
   font-family: Arial, sans-serif;
   line-height: 1.5;
   color: #222222;
   background-color: #fbfcf7;
+  background-image: url('../images/background.jpg');
+  background-repeat: repeat;
+  background-size: 480px 480px;
+}
+
+body > main {
+  flex: 1 0 auto;
+  width: 100%;
+  background-color: rgba(251, 252, 247, 0.92);
+}
+
+.header,
+.footer {
+  flex-shrink: 0;
 }
 
 h1, h2, h3 {
@@ -218,6 +236,7 @@ a {
 }
 
 .footer {
+  margin-top: auto;
   background-color: #1d2a1f;
   color: #ffffff;
 }
@@ -226,6 +245,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  gap: 8px 24px;
 }
 
 .footer p {
